@@ -1,0 +1,26 @@
+[package]
+name = "deposit-game"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "deposit_game"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.18.2"
+anchor-spl = "0.18.0"
+solana-program = "1.8.2"
+sha2 = "0.10.1"
+
+[dependencies.spl-token]
+version = "3.2.0"
+features = ["no-entrypoint"]
+
