@@ -868,6 +868,7 @@ pub struct CreateOddGame<'info> {
             "odd_game".as_bytes(),
             id.as_bytes(),
         ],
+        bump
     )]
     game: Box<Account<'info, OddGame>>,
     #[account(
